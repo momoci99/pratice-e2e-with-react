@@ -50,7 +50,7 @@ export default tseslint.config({
 ```
 
 ```
-npx playwright test
+  npx playwright test
     Runs the end-to-end tests.
 
   npx playwright test --ui
@@ -67,4 +67,8 @@ npx playwright test
 
   npx playwright codegen
     Auto generate tests with Codegen.
+
+
+  npx playwright test --update-snapshots
+    update snapshot
 ```

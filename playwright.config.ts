@@ -31,6 +31,9 @@ export default defineConfig({
     trace: "on-first-retry",
   },
 
+  snapshotPathTemplate:
+    "{snapshotDir}/{testFileDir}/{testFileName}-snapshots/{arg}{-projectName}{ext}",
+
   webServer: {
     command: "npm run dev",
     port: 5173,

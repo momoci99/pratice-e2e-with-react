@@ -53,7 +53,13 @@ const App: React.FC = () => {
       <h1>Simple Todo App</h1>
       <div>
         <input
-          style={{ marginRight: "10px", width: "200px" }}
+          style={{
+            marginRight: "10px",
+            width: "200px",
+            borderRadius: "5px",
+            padding: "5px",
+            border: "1px solid #ccc",
+          }}
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}

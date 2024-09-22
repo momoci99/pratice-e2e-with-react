@@ -17,6 +17,10 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+
+      - name: Install sans-serif fonts
+        run: sudo apt-get install -y fonts-liberation fonts-dejavu-core
+
       - name: Run Playwright tests
         run: npx playwright test
       - uses: actions/upload-artifact@v4

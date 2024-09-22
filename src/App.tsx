@@ -59,6 +59,7 @@ const App: React.FC = () => {
             borderRadius: "5px",
             padding: "5px",
             border: "1px solid #ccc",
+            height: "20px",
           }}
           type="text"
           value={newTodo}

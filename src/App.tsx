@@ -60,6 +60,7 @@ const App: React.FC = () => {
             padding: "5px",
             border: "1px solid #ccc",
             height: "20px",
+            fontSize: "16px",
           }}
           type="text"
           value={newTodo}

@@ -57,10 +57,13 @@ const App: React.FC = () => {
             marginRight: "10px",
             width: "200px",
             borderRadius: "5px",
-            padding: "5px",
+            // padding: "5px",
             border: "1px solid #ccc",
             height: "20px",
             fontSize: "16px",
+            fontFamily: "Arial",
+
+            padding: "0px",
           }}
           type="text"
           value={newTodo}

@@ -136,6 +136,12 @@ input[type="search"]::-webkit-search-results-decoration {
   -moz-appearance: none;
 }
 
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color: black;
+}
+
 :root {
   /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;

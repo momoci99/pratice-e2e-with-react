@@ -68,7 +68,7 @@ const App: React.FC = () => {
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
-          // placeholder="Add a new todo"
+          placeholder="Add a new todo"
         />
         <button onClick={addTodo}>Add</button>
       </div>

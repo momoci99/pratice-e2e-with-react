@@ -58,6 +58,7 @@ const App: React.FC = () => {
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
           placeholder="Add a new todo"
+          style={{ marginRight: "10px", width: "200px" }}
         ></Input>
         <Button onClick={addTodo}>Add</Button>
       </div>

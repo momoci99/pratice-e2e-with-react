@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 
 import TodoItem from "./TodoItem";
+import { Button, Input, Typography } from "@mui/material";
 
 interface Todo {
   id: number;
@@ -50,27 +51,15 @@ const App: React.FC = () => {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h1>Simple Todo App</h1>
+      <Typography variant="h1">Simple Todo App</Typography>
       <div>
-        <input
-          style={{
-            marginRight: "10px",
-            width: "200px",
-            borderRadius: "5px",
-            // padding: "5px",
-            border: "1px solid #ccc",
-            height: "20px",
-            fontSize: "16px",
-            fontFamily: "Arial",
-
-            padding: "0px",
-          }}
+        <Input
           type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
           placeholder="Add a new todo"
-        />
-        <button onClick={addTodo}>Add</button>
+        ></Input>
+        <Button onClick={addTodo}>Add</Button>
       </div>
       <ul data-testid="todo-item-list">
         {todos.map((todo) => (
